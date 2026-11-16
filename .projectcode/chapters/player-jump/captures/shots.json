@@ -1,0 +1,67 @@
+{
+  "chapter": "player-jump",
+  "window": {
+    "cwd": "bubble",
+    "build": "javac -encoding UTF-8 -d bin -cp lib/lombok.jar -processorpath lib/lombok.jar src/bubble/game/*.java",
+    "main": "bubble.game.BubbleFrame",
+    "classpath": "bin;lib/lombok.jar"
+  },
+  "shots": [
+    {
+      "file": "T1-점프-중.png",
+      "task": "T1",
+      "commit": "cd38737",
+      "screen": "게임 창",
+      "see": "가운데 발판에서 왼쪽으로 뛴 펭귄이 위 발판보다 높이 떠 있다",
+      "window": {
+        "steps": [
+          "wait:500",
+          "press:RIGHT",
+          "wait:1600",
+          "release:RIGHT",
+          "wait:500",
+          "press:LEFT",
+          "tap:UP",
+          "wait:250"
+        ]
+      }
+    },
+    {
+      "file": "T2-ex07-실행.png",
+      "task": "T2",
+      "commit": "fd97269",
+      "screen": "게임 창",
+      "see": "bubble.ex07.BubbleFrame도 위 화살표로 펭귄이 뛰어 공중에 있다",
+      "window": {
+        "steps": [
+          "wait:800",
+          "tap:UP",
+          "wait:250"
+        ],
+        "main": "bubble.ex07.BubbleFrame",
+        "build": "javac -encoding UTF-8 -d bin -cp lib/lombok.jar -processorpath lib/lombok.jar src/bubble/ex07/*.java"
+      }
+    },
+    {
+      "file": "done-위-발판에-서기.png",
+      "task": "done",
+      "commit": "fd97269",
+      "screen": "게임 창",
+      "see": "가운데 발판에서 뛴 펭귄이 왼쪽 위 발판에 올라 서 있다",
+      "window": {
+        "steps": [
+          "wait:500",
+          "press:RIGHT",
+          "wait:1600",
+          "release:RIGHT",
+          "wait:500",
+          "press:LEFT",
+          "tap:UP",
+          "wait:900",
+          "release:LEFT",
+          "wait:300"
+        ]
+      }
+    }
+  ]
+}

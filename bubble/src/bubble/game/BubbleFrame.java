@@ -19,6 +19,7 @@ public class BubbleFrame extends JFrame {
 	private List<Bubble> bubbles = new ArrayList<>();
 	private List<Enemy> enemies = new ArrayList<>();
 	private JLabel clear;
+	private Timer timer;
 
 	public BubbleFrame() {
 		setTitle("버블 게임");
@@ -77,7 +78,8 @@ public class BubbleFrame extends JFrame {
 			}
 		});
 
-		new Timer(16, e -> tick()).start();
+		timer = new Timer(16, e -> tick());
+		timer.start();
 
 		Sound bgm = new Sound("sound/bgm.wav");
 		bgm.loop();
@@ -118,12 +120,21 @@ public class BubbleFrame extends JFrame {
 				enemy.pop();
 				remove(enemy);
 			}
+			if (touch && !enemy.isBubbled()) {
+				gameOver();
+				return;
+			}
 		}
 		enemies.removeIf(enemy -> enemy.isPopped());
 		if (enemies.isEmpty()) {
 			clear.setVisible(true);
 		}
 		repaint();
+	}
+
+	private void gameOver() {
+		timer.stop();
+		player.die();
 	}
 
 	private void shoot() {

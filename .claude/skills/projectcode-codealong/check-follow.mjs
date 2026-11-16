@@ -247,11 +247,13 @@ const links = contract.links
 const tmp = build ? fs.mkdtempSync(path.join(os.tmpdir(), "check-follow-")) : null
 // 빌드 줄이 가리키는 파일(예 src/hexa/Main.java)이 아직 없는 단계는 빌드할 코드가 없어 건너뛴다
 const buildFiles = (buildCommand || "").split(/[\s,]+/).filter((w) => /^[\w.-]+(\/[\w.-]+)+\.\w+$/.test(w))
+// 복사할 파일(jar, 그림)은 글자로 읽으면 깨진다. 빌드 폴더에는 원래 바이트로 쓴다
+const copied = new Set()
 function buildStep(state, n) {
   const dir = path.join(tmp, String(n))
   for (const [f, c] of state) {
     fs.mkdirSync(path.dirname(path.join(dir, f)), { recursive: true })
-    fs.writeFileSync(path.join(dir, f), c)
+    fs.writeFileSync(path.join(dir, f), copied.has(f) ? rawOf(n, f) : c)
   }
   const made = []
   for (const l of links) {
@@ -293,6 +295,7 @@ for (let s = 0; s < Math.min(steps.length, commits.length - 1); s++) {
       else if (!tree(s + 1).has(op.file) || !fs.readFileSync(from).equals(rawOf(s + 1, op.file)))
         errs.push(`복사할 파일이 lecture와 다름 ${op.file}`)
       state.set(op.file, tree(s + 1).get(op.file))
+      copied.add(op.file)
       continue
     }
     if (op.kind === "new") {

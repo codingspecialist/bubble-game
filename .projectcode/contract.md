@@ -28,7 +28,7 @@
 
 - 명령은 모두 bubble 폴더에서 친다. 그림과 소리를 bubble 폴더 기준 경로로 읽는다
 - 빌드: javac -encoding UTF-8 -d bin -cp lib/lombok.jar -processorpath lib/lombok.jar src/bubble/game/*.java
-- 실행: java -cp "bin;lib/lombok.jar" bubble.game.BubbleFrame
+- 실행: javac -encoding UTF-8 -d bin -cp lib/lombok.jar -processorpath lib/lombok.jar src/bubble/game/*.java && java -cp "bin;lib/lombok.jar" bubble.game.BubbleFrame
 - 장 끝 코드 실행: 두 명령의 game을 ex05처럼 바꾼다
 - javac에 파일을 별표로 모두 넘긴다. 하나만 넘기면 Lombok이 함께 컴파일되는 파일을 처리하지 않는다
 

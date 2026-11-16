@@ -1,6 +1,6 @@
 # project-setup 작업
 
-- [ ] T1 이클립스 프로젝트와 main 만들기
+- [x] T1 이클립스 프로젝트와 main 만들기
   - 근거: S1, S2
   - 파일: bubble/.project, bubble/.classpath, bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 콘솔에 버블 게임 준비가 찍힌다

@@ -1,0 +1,25 @@
+# project-setup 작업
+
+- [ ] T1 이클립스 프로젝트와 main 만들기
+  - 근거: S1, S2
+  - 파일: bubble/.project, bubble/.classpath, bubble/src/bubble/game/BubbleFrame.java
+  - 실행하면: 콘솔에 버블 게임 준비가 찍힌다
+  - Why: 실행되는 빈 프로젝트가 있어야 장마다 코드를 쌓을 수 있다
+- [ ] T2 Lombok 붙이기
+  - 근거: S3
+  - 파일: bubble/lib/lombok.jar, bubble/.classpath
+  - 실행하면: Lombok을 붙여 컴파일해도 버블 게임 준비가 찍힌다
+  - Why: 뒤 장에서 getter와 setter를 손으로 쓰지 않으려면 미리 붙여 둔다
+- [ ] T3 그림과 소리 파일 넣기
+  - 근거: S4
+  - 파일: bubble/image, bubble/sound
+  - 실행하면: image와 sound 폴더에 파일 13개가 보인다
+  - Why: 게임 창을 띄우는 장부터 바로 그림을 쓴다
+- [ ] T4 장 끝 코드를 ex01로 남기기
+  - 근거: S5
+  - 파일: bubble/src/bubble/ex01/BubbleFrame.java
+  - 실행하면: bubble.ex01.BubbleFrame도 버블 게임 준비를 찍는다
+  - Why: 장마다 끝난 코드를 따로 실행해 볼 수 있게 남긴다
+- [ ] 수렴 점검
+- [ ] 캡처
+- [ ] 도식

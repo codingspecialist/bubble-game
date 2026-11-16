@@ -83,6 +83,10 @@ public class BubbleFrame extends JFrame {
 	private void tick() {
 		player.move();
 		player.fall(floors);
+		for (Enemy enemy : enemies) {
+			enemy.move();
+			enemy.fall(floors);
+		}
 		for (Bubble bubble : bubbles) {
 			bubble.move();
 			if (bubble.isPopped()) {

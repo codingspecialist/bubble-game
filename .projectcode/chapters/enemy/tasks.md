@@ -5,7 +5,7 @@
   - 파일: bubble/src/bubble/game/Enemy.java, bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 바닥에 적군 둘, 오른쪽 아래 발판에 적군 하나가 왼쪽을 보고 서 있다
   - Why: 적군도 플레이어처럼 그림 한 장이고, 여럿이라 목록에 담는다
-- [ ] T2 적군이 혼자 걷고 벽에서 돌아서기
+- [x] T2 적군이 혼자 걷고 벽에서 돌아서기
   - 근거: S2, S3, S4
   - 파일: bubble/src/bubble/game/Enemy.java, bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 적군들이 왼쪽으로 걷고, 발판의 적군은 끝에서 바닥으로 떨어지고, 왼쪽 벽에 닿은 적군은 오른쪽으로 돌아선다

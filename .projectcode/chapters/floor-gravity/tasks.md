@@ -10,7 +10,7 @@
   - 파일: bubble/src/bubble/game/Player.java, bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 펭귄이 왼쪽 위에서 떨어져 발판에 서고, 오른쪽으로 걸어 나가면 아래 발판으로 떨어진다
   - Why: 매 틱 속도를 더하면 떨어질수록 빨라지고, 발판을 지나치기 전에 세워야 한다
-- [ ] T3 장 끝 코드를 ex06으로 남기기
+- [x] T3 장 끝 코드를 ex06으로 남기기
   - 근거: S5
   - 파일: bubble/src/bubble/ex06
   - 실행하면: bubble.ex06.BubbleFrame도 펭귄이 떨어져 발판에 선다

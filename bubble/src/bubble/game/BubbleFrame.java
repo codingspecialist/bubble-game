@@ -6,10 +6,16 @@ import javax.swing.JLabel;
 
 public class BubbleFrame extends JFrame {
 
+	private Player player;
+
 	public BubbleFrame() {
 		setTitle("버블 게임");
 		setContentPane(new JLabel(new ImageIcon("image/background.png")));
 		setLayout(null);
+
+		player = new Player();
+		add(player);
+
 		pack();
 		setResizable(false);
 		setLocationRelativeTo(null);

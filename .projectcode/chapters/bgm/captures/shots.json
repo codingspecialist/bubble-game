@@ -1,0 +1,49 @@
+{
+  "chapter": "bgm",
+  "window": {
+    "cwd": "bubble",
+    "build": "javac -encoding UTF-8 -d bin -cp lib/lombok.jar -processorpath lib/lombok.jar src/bubble/game/*.java",
+    "main": "bubble.game.BubbleFrame",
+    "classpath": "bin;lib/lombok.jar"
+  },
+  "shots": [
+    {
+      "file": "T1-배경음악.png",
+      "task": "T1",
+      "commit": "08d0c5c",
+      "screen": "게임 창",
+      "see": "화면은 전과 같다. 소리는 사진에 담기지 않아 실행해서 듣는다",
+      "window": {
+        "steps": [
+          "wait:1500"
+        ]
+      }
+    },
+    {
+      "file": "T2-ex14-실행.png",
+      "task": "T2",
+      "commit": "43c00ad",
+      "screen": "게임 창",
+      "see": "bubble.ex14.BubbleFrame도 게임 창이 뜬다. 소리는 실행해서 듣는다",
+      "window": {
+        "steps": [
+          "wait:1500"
+        ],
+        "main": "bubble.ex14.BubbleFrame",
+        "build": "javac -encoding UTF-8 -d bin -cp lib/lombok.jar -processorpath lib/lombok.jar src/bubble/ex14/*.java"
+      }
+    },
+    {
+      "file": "done-배경음악.png",
+      "task": "done",
+      "commit": "43c00ad",
+      "screen": "게임 창",
+      "see": "배경음악이 나오는 게임 화면. 펭귄과 적군이 전처럼 있다",
+      "window": {
+        "steps": [
+          "wait:1500"
+        ]
+      }
+    }
+  ]
+}

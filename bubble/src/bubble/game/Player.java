@@ -12,10 +12,12 @@ public class Player extends JLabel {
 
 	private static final int SPEED = 4;
 	private static final int GRAVITY = 1;
+	private static final int JUMP = -18;
 
 	private int x;
 	private int y;
 	private int dy;
+	private boolean onGround;
 	@Setter
 	private boolean left;
 	@Setter
@@ -58,16 +60,24 @@ public class Player extends JLabel {
 		setLocation(x, y);
 	}
 
+	public void jump() {
+		if (onGround) {
+			dy = JUMP;
+		}
+	}
+
 	public void fall(List<Rectangle> floors) {
 		int bottom = y + 50;
 		dy += GRAVITY;
 		y += dy;
+		onGround = false;
 		for (Rectangle floor : floors) {
 			boolean above = bottom <= floor.y && y + 50 >= floor.y;
 			boolean across = x + 50 > floor.x && x < floor.x + floor.width;
 			if (above && across) {
 				y = floor.y - 50;
 				dy = 0;
+				onGround = true;
 			}
 		}
 		setLocation(x, y);

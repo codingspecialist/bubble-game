@@ -39,6 +39,12 @@ public class Player extends JLabel {
 			x += SPEED;
 			direction = Direction.RIGHT;
 		}
+		if (x < 40) {
+			x = 40;
+		}
+		if (x > 910) {
+			x = 910;
+		}
 		if (direction == Direction.LEFT) {
 			setIcon(playerL);
 		} else {

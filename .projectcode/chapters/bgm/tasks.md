@@ -1,6 +1,6 @@
 # bgm 작업
 
-- [ ] T1 배경음악 반복 재생하기
+- [x] T1 배경음악 반복 재생하기
   - 근거: S1, S2, S3
   - 파일: bubble/src/bubble/game/Sound.java, bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 게임 창이 뜨면서 배경음악이 끝없이 반복된다. 화면은 전과 같다

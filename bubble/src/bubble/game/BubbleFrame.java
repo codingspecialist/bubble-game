@@ -79,6 +79,9 @@ public class BubbleFrame extends JFrame {
 
 		new Timer(16, e -> tick()).start();
 
+		Sound bgm = new Sound("sound/bgm.wav");
+		bgm.loop();
+
 		pack();
 		setResizable(false);
 		setLocationRelativeTo(null);

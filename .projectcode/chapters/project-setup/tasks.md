@@ -5,7 +5,7 @@
   - 파일: bubble/.project, bubble/.classpath, bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 콘솔에 버블 게임 준비가 찍힌다
   - Why: 실행되는 빈 프로젝트가 있어야 장마다 코드를 쌓을 수 있다
-- [ ] T2 Lombok 붙이기
+- [x] T2 Lombok 붙이기
   - 근거: S3
   - 파일: bubble/lib/lombok.jar, bubble/.classpath
   - 실행하면: Lombok을 붙여 컴파일해도 버블 게임 준비가 찍힌다

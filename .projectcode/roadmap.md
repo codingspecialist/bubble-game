@@ -39,7 +39,7 @@
 | 번호 | 장 ID | 이름 | 종류 | 배울 것 | 상태 |
 |---|---|---|---|---|---|
 | 1 | project-setup | 프로젝트 뼈대 | 기능 | 폴더 구조, 이클립스, Lombok, 그림과 소리 파일 | 완료 |
-| 2 | game-window | 게임 창과 배경 | 기능 | JFrame, 절대 배치, JLabel 배경 | 진행 중 |
+| 2 | game-window | 게임 창과 배경 | 기능 | JFrame, 절대 배치, JLabel 배경 | 완료 |
 | 3 | player | 플레이어 놓기 | 기능 | JLabel 상속, ImageIcon | 대기 |
 | 4 | player-move | 좌우 이동 | 기능 | KeyAdapter, Timer 게임 루프, Direction enum, Lombok | 대기 |
 | 5 | wall-stop | 벽에서 멈추기 | 기능 | 벽돌 그리기, 이동 뒤 좌표 확인 | 대기 |

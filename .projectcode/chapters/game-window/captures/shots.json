@@ -1,0 +1,53 @@
+{
+  "chapter": "game-window",
+  "window": {
+    "cwd": "bubble",
+    "build": "javac -encoding UTF-8 -d bin -cp lib/lombok.jar -processorpath lib/lombok.jar --source-path src src/bubble/game/BubbleFrame.java",
+    "main": "bubble.game.BubbleFrame",
+    "classpath": "bin;lib/lombok.jar"
+  },
+  "shots": [
+    {
+      "file": "T1-빈-창.png",
+      "task": "T1",
+      "commit": "f348664",
+      "screen": "게임 창",
+      "see": "제목이 버블 게임인 빈 창. 창 안은 회색이다",
+      "window": {
+        "steps": []
+      }
+    },
+    {
+      "file": "T2-동굴-배경.png",
+      "task": "T2",
+      "commit": "ae22a3b",
+      "screen": "게임 창",
+      "see": "창 전체에 동굴 배경이 보인다",
+      "window": {
+        "steps": []
+      }
+    },
+    {
+      "file": "T3-ex02-실행.png",
+      "task": "T3",
+      "commit": "1552c3f",
+      "screen": "게임 창",
+      "see": "bubble.ex02.BubbleFrame도 동굴 배경 창을 띄운다",
+      "window": {
+        "steps": [],
+        "main": "bubble.ex02.BubbleFrame",
+        "build": "javac -encoding UTF-8 -d bin -cp lib/lombok.jar -processorpath lib/lombok.jar --source-path src src/bubble/ex02/BubbleFrame.java"
+      }
+    },
+    {
+      "file": "done-게임-창.png",
+      "task": "done",
+      "commit": "1552c3f",
+      "screen": "게임 창",
+      "see": "1000x640 창에 동굴 배경이 깔려 있다",
+      "window": {
+        "steps": []
+      }
+    }
+  ]
+}

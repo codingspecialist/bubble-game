@@ -60,7 +60,10 @@ public class BubbleFrame extends JFrame {
 			}
 		});
 
-		new Timer(16, e -> player.move()).start();
+		new Timer(16, e -> {
+			player.move();
+			player.fall(floors);
+		}).start();
 
 		pack();
 		setResizable(false);

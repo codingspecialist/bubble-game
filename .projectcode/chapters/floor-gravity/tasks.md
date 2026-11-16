@@ -5,7 +5,7 @@
   - 파일: bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 바닥과 발판 다섯 개가 벽돌로 보인다
   - Why: 착지를 확인할 발판 목록을 먼저 만들고 같은 목록으로 그린다
-- [ ] T2 중력으로 떨어져 발판에 서기
+- [x] T2 중력으로 떨어져 발판에 서기
   - 근거: S2, S3, S4
   - 파일: bubble/src/bubble/game/Player.java, bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 펭귄이 왼쪽 위에서 떨어져 발판에 서고, 오른쪽으로 걸어 나가면 아래 발판으로 떨어진다

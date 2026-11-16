@@ -21,6 +21,7 @@ public class BubbleFrame extends JFrame {
 	private JLabel clear;
 	private JLabel gameover;
 	private Timer timer;
+	private Sound bgm;
 
 	public BubbleFrame() {
 		setTitle("버블 게임");
@@ -87,7 +88,7 @@ public class BubbleFrame extends JFrame {
 		timer = new Timer(16, e -> tick());
 		timer.start();
 
-		Sound bgm = new Sound("sound/bgm.wav");
+		bgm = new Sound("sound/bgm.wav");
 		bgm.loop();
 
 		pack();
@@ -142,6 +143,8 @@ public class BubbleFrame extends JFrame {
 		timer.stop();
 		player.die();
 		gameover.setVisible(true);
+		bgm.stop();
+		new Sound("sound/gameover.wav").play();
 	}
 
 	private void shoot() {

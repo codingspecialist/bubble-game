@@ -10,7 +10,7 @@
   - 파일: bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 멈춘 화면 가운데 맨 앞에 GAME OVER가 보인다
   - Why: CLEAR!와 같은 방법으로 숨겨 둔 글자를 0번 자리에서 보인다
-- [ ] T3 배경음악 끄고 게임오버 소리 내기
+- [x] T3 배경음악 끄고 게임오버 소리 내기
   - 근거: S4
   - 파일: bubble/src/bubble/game/Sound.java, bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 게임오버가 되면 배경음악이 멈추고 게임오버 소리가 한 번 나온다. 화면은 T2와 같다

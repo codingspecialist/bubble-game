@@ -1,6 +1,6 @@
 # game-window 작업
 
-- [ ] T1 빈 게임 창 띄우기
+- [x] T1 빈 게임 창 띄우기
   - 근거: S1, S2
   - 파일: bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 제목이 버블 게임인 빈 창이 화면 가운데 뜬다

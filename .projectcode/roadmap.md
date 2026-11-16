@@ -47,7 +47,7 @@
 | 7 | player-jump | 점프 | 기능 | 위로 향하는 속도, 발판 아래에서 올라타기 | 완료 |
 | 8 | bubble-shoot | 물방울 쏘기 | 기능 | 리스트로 여러 물체 갱신 | 완료 |
 | 9 | bubble-pop | 물방울 사라지기 | 기능 | remove와 repaint, removeIf | 완료 |
-| 10 | enemy | 적군 만들기 | 기능 | 혼자 걷는 물체, 벽에서 돌아서기 | 대기 |
+| 10 | enemy | 적군 만들기 | 기능 | 혼자 걷는 물체, 벽에서 돌아서기 | 진행 중 |
 | 11 | sprite-refactor | 공통 부모 Sprite | 리팩터 | 상속으로 겹치는 코드 합치기, protected | 대기 |
 | 12 | enemy-trap | 적군 가두기 | 기능 | Rectangle intersects, 상태 바꾸기 | 대기 |
 | 13 | enemy-pop | 갇힌 적군 터트리기 | 기능 | 리스트에서 적군 지우기, 클리어 | 대기 |

@@ -1,0 +1,25 @@
+# game-over 작업
+
+- [ ] T1 적군에 닿으면 루프 멈추기
+  - 근거: S1, S2
+  - 파일: bubble/src/bubble/game/BubbleFrame.java, bubble/src/bubble/game/Player.java
+  - 실행하면: 적군에 닿은 펭귄이 쓰러진 그림이 되고 적군과 물방울이 모두 멈춘다
+  - Why: 모든 움직임이 루프 하나에서 나오므로 Timer 하나만 멈추면 게임 전체가 멈춘다
+- [ ] T2 GAME OVER 맨 앞에 보이기
+  - 근거: S3
+  - 파일: bubble/src/bubble/game/BubbleFrame.java
+  - 실행하면: 멈춘 화면 가운데 맨 앞에 GAME OVER가 보인다
+  - Why: CLEAR!와 같은 방법으로 숨겨 둔 글자를 0번 자리에서 보인다
+- [ ] T3 배경음악 끄고 게임오버 소리 내기
+  - 근거: S4
+  - 파일: bubble/src/bubble/game/Sound.java, bubble/src/bubble/game/BubbleFrame.java
+  - 실행하면: 게임오버가 되면 배경음악이 멈추고 게임오버 소리가 한 번 나온다. 화면은 T2와 같다
+  - Why: 반복 재생과 한 번 재생은 같은 Clip의 다른 메서드다
+- [ ] T4 장 끝 코드를 ex15로 남기기
+  - 근거: S5
+  - 파일: bubble/src/bubble/ex15
+  - 실행하면: bubble.ex15.BubbleFrame도 적군에 닿으면 GAME OVER가 보인다
+  - Why: 장마다 끝난 코드를 따로 실행해 볼 수 있게 남긴다
+- [ ] 수렴 점검
+- [ ] 캡처
+- [ ] 도식

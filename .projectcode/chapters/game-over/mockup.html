@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>game-over 시안</title>
+<style>
+  body { margin: 24px; font-family: sans-serif; background: #fff; }
+  .window { width: 1000px; border: 1px solid #000; }
+  .title { padding: 6px 10px; border-bottom: 1px solid #000; font-size: 14px; }
+  .screen { position: relative; width: 1000px; height: 640px; background: url(../../../bubble/image/background.png); }
+  .gameover { position: absolute; left: 250px; top: 279px; }
+  .player { position: absolute; left: 520px; top: 570px; }
+  .enemy { position: absolute; left: 480px; top: 570px; }
+</style>
+</head>
+<body>
+<div class="window">
+  <div class="title">버블 게임</div>
+  <div class="screen">
+    <img class="enemy" src="../../../bubble/image/enemyR.png" alt="적군">
+    <img class="player" src="../../../bubble/image/playerDie.png" alt="쓰러진 펭귄">
+    <img class="gameover" src="../../../bubble/image/gameover.png" alt="GAME OVER">
+  </div>
+</div>
+</body>
+</html>

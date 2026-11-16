@@ -1,6 +1,6 @@
 # enemy 작업
 
-- [ ] T1 적군 셋 세우기
+- [x] T1 적군 셋 세우기
   - 근거: S1
   - 파일: bubble/src/bubble/game/Enemy.java, bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 바닥에 적군 둘, 오른쪽 아래 발판에 적군 하나가 왼쪽을 보고 서 있다

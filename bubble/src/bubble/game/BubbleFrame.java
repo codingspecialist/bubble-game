@@ -16,6 +16,7 @@ public class BubbleFrame extends JFrame {
 	private Player player;
 	private ImageIcon brickIcon = new ImageIcon("image/brick.png");
 	private List<Rectangle> floors = new ArrayList<>();
+	private List<Bubble> bubbles = new ArrayList<>();
 
 	public BubbleFrame() {
 		setTitle("버블 게임");
@@ -62,10 +63,7 @@ public class BubbleFrame extends JFrame {
 			}
 		});
 
-		new Timer(16, e -> {
-			player.move();
-			player.fall(floors);
-		}).start();
+		new Timer(16, e -> tick()).start();
 
 		pack();
 		setResizable(false);
@@ -74,8 +72,17 @@ public class BubbleFrame extends JFrame {
 		setVisible(true);
 	}
 
+	private void tick() {
+		player.move();
+		player.fall(floors);
+		for (Bubble bubble : bubbles) {
+			bubble.move();
+		}
+	}
+
 	private void shoot() {
 		Bubble bubble = new Bubble(player);
+		bubbles.add(bubble);
 		add(bubble);
 	}
 

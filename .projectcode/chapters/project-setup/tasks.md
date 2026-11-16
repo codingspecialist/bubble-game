@@ -15,7 +15,7 @@
   - 파일: bubble/image, bubble/sound
   - 실행하면: image와 sound 폴더에 파일 13개가 보인다
   - Why: 게임 창을 띄우는 장부터 바로 그림을 쓴다
-- [ ] T4 장 끝 코드를 ex01로 남기기
+- [x] T4 장 끝 코드를 ex01로 남기기
   - 근거: S5
   - 파일: bubble/src/bubble/ex01/BubbleFrame.java
   - 실행하면: bubble.ex01.BubbleFrame도 버블 게임 준비를 찍는다

@@ -6,6 +6,7 @@ import java.awt.event.KeyEvent;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.Timer;
 
 public class BubbleFrame extends JFrame {
 
@@ -23,11 +24,21 @@ public class BubbleFrame extends JFrame {
 			@Override
 			public void keyPressed(KeyEvent e) {
 				switch (e.getKeyCode()) {
-				case KeyEvent.VK_LEFT -> player.moveLeft();
-				case KeyEvent.VK_RIGHT -> player.moveRight();
+				case KeyEvent.VK_LEFT -> player.setLeft(true);
+				case KeyEvent.VK_RIGHT -> player.setRight(true);
+				}
+			}
+
+			@Override
+			public void keyReleased(KeyEvent e) {
+				switch (e.getKeyCode()) {
+				case KeyEvent.VK_LEFT -> player.setLeft(false);
+				case KeyEvent.VK_RIGHT -> player.setRight(false);
 				}
 			}
 		});
+
+		new Timer(16, e -> player.move()).start();
 
 		pack();
 		setResizable(false);

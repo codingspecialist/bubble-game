@@ -1,6 +1,6 @@
 # player 작업
 
-- [ ] T1 플레이어를 창에 놓기
+- [x] T1 플레이어를 창에 놓기
   - 근거: S1
   - 파일: bubble/src/bubble/game/Player.java, bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 창 왼쪽 아래에 펭귄이 오른쪽을 보고 서 있다

@@ -10,7 +10,7 @@
   - 파일: bubble/src/bubble/game/Player.java
   - 실행하면: 왼쪽 화살표를 계속 눌러도 펭귄이 왼쪽 벽 앞에서 멈춘다
   - Why: 움직인 뒤 좌표를 확인해 되돌리면 벽을 넘지 않는다
-- [ ] T3 장 끝 코드를 ex05로 남기기
+- [x] T3 장 끝 코드를 ex05로 남기기
   - 근거: S3
   - 파일: bubble/src/bubble/ex05
   - 실행하면: bubble.ex05.BubbleFrame도 벽 앞에서 펭귄이 멈춘다

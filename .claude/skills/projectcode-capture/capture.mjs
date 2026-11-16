@@ -118,6 +118,22 @@ function takeRun(shot) {
   writeFileSync(join(outDir, shot.file), lines.join("\n") + "\n")
 }
 
+// 게임 창을 띄우고 키를 보낸 뒤 창 내용을 PNG로 남긴다. WindowShot.java가 찍는다
+// spec.window: { cwd, build, main, classpath }. shot.window: { main, steps }
+function takeWindow(shot) {
+  const skillDir = dirname(fileURLToPath(import.meta.url))
+  const shotBin = join(skillDir, "bin-shot")
+  execSync(`javac -encoding UTF-8 -d "${shotBin}" "${join(skillDir, "WindowShot.java")}"`, { stdio: "pipe" })
+  const cwd = spec.window.cwd || "."
+  if (spec.window.build) execSync(spec.window.build, { cwd, stdio: "pipe", timeout: 120000 })
+  const sep = process.platform === "win32" ? ";" : ":"
+  const classpath = `${spec.window.classpath}${sep}${shotBin}`
+  const main = shot.window.main || spec.window.main
+  const steps = (shot.window.steps || []).map((s) => `"${s}"`).join(" ")
+  const out = join(process.cwd(), outDir, shot.file)
+  execSync(`java -cp "${classpath}" WindowShot ${main} "${out}" ${steps}`, { cwd, stdio: "pipe", timeout: 60000 })
+}
+
 function writeList() {
   const rows = spec.shots.map((s) => {
     const see = s.missing ? `${s.see} (fix 뒤 다시 찍지 못함)` : s.see
@@ -132,6 +148,7 @@ const selected = spec.shots.filter((s) => isSelected(s) && !s.missing)
 let browser = null
 for (const shot of selected) {
   if (shot.run) takeRun(shot)
+  else if (shot.window) takeWindow(shot)
   else if (shot.request) await takeRequest(shot)
   else {
     if (!browser) browser = await loadPlaywright().chromium.launch()

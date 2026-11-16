@@ -1,6 +1,6 @@
 # wall-stop 작업
 
-- [ ] T1 양쪽 벽에 벽돌 쌓기
+- [x] T1 양쪽 벽에 벽돌 쌓기
   - 근거: S1
   - 파일: bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 창 왼쪽과 오른쪽 끝에 벽돌 벽이 보이고, 펭귄은 아직 벽을 지나간다

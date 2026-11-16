@@ -11,6 +11,7 @@ import javax.swing.Timer;
 public class BubbleFrame extends JFrame {
 
 	private Player player;
+	private ImageIcon brickIcon = new ImageIcon("image/brick.png");
 
 	public BubbleFrame() {
 		setTitle("버블 게임");
@@ -19,6 +20,11 @@ public class BubbleFrame extends JFrame {
 
 		player = new Player();
 		add(player);
+
+		for (int y = 0; y < 640; y += 20) {
+			addBrick(0, y);
+			addBrick(960, y);
+		}
 
 		addKeyListener(new KeyAdapter() {
 			@Override
@@ -45,6 +51,12 @@ public class BubbleFrame extends JFrame {
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);
+	}
+
+	private void addBrick(int x, int y) {
+		JLabel brick = new JLabel(brickIcon);
+		brick.setBounds(x, y, 40, 20);
+		add(brick);
 	}
 
 	public static void main(String[] args) {

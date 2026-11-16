@@ -1,8 +1,18 @@
 package bubble.game;
 
-public class BubbleFrame {
+import javax.swing.JFrame;
+
+public class BubbleFrame extends JFrame {
+
+	public BubbleFrame() {
+		setTitle("버블 게임");
+		setSize(1000, 640);
+		setLocationRelativeTo(null);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setVisible(true);
+	}
 
 	public static void main(String[] args) {
-		System.out.println("버블 게임 준비");
+		new BubbleFrame();
 	}
 }

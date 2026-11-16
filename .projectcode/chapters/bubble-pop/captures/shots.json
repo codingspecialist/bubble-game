@@ -1,0 +1,61 @@
+{
+  "chapter": "bubble-pop",
+  "window": {
+    "cwd": "bubble",
+    "build": "javac -encoding UTF-8 -d bin -cp lib/lombok.jar -processorpath lib/lombok.jar src/bubble/game/*.java",
+    "main": "bubble.game.BubbleFrame",
+    "classpath": "bin;lib/lombok.jar"
+  },
+  "shots": [
+    {
+      "file": "T1-먼저-쏜-물방울-사라짐.png",
+      "task": "T1",
+      "commit": "32bdc47",
+      "screen": "게임 창",
+      "see": "두 번 쏘았는데 먼저 쏜 물방울은 사라지고 나중에 쏜 물방울 하나만 떠 있다",
+      "window": {
+        "steps": [
+          "wait:800",
+          "tap:SPACE",
+          "wait:2500",
+          "tap:SPACE",
+          "wait:1800"
+        ]
+      }
+    },
+    {
+      "file": "T2-ex09-실행.png",
+      "task": "T2",
+      "commit": "199fa24",
+      "screen": "게임 창",
+      "see": "bubble.ex09.BubbleFrame도 먼저 쏜 물방울이 사라지고 하나만 남는다",
+      "window": {
+        "steps": [
+          "wait:800",
+          "tap:SPACE",
+          "wait:2500",
+          "tap:SPACE",
+          "wait:1800"
+        ],
+        "main": "bubble.ex09.BubbleFrame",
+        "build": "javac -encoding UTF-8 -d bin -cp lib/lombok.jar -processorpath lib/lombok.jar src/bubble/ex09/*.java"
+      }
+    },
+    {
+      "file": "done-물방울-모두-사라짐.png",
+      "task": "done",
+      "commit": "199fa24",
+      "screen": "게임 창",
+      "see": "쏜 물방울이 모두 사라지고 펭귄만 남았다",
+      "window": {
+        "steps": [
+          "wait:800",
+          "tap:SPACE",
+          "wait:300",
+          "tap:SPACE",
+          "wait:5000"
+        ]
+      }
+    }
+  ]
+}

@@ -17,6 +17,7 @@ public class BubbleFrame extends JFrame {
 	private ImageIcon brickIcon = new ImageIcon("image/brick.png");
 	private List<Rectangle> floors = new ArrayList<>();
 	private List<Bubble> bubbles = new ArrayList<>();
+	private List<Enemy> enemies = new ArrayList<>();
 
 	public BubbleFrame() {
 		setTitle("버블 게임");
@@ -41,6 +42,13 @@ public class BubbleFrame extends JFrame {
 			for (int x = floor.x; x < floor.x + floor.width; x += 40) {
 				addBrick(x, floor.y);
 			}
+		}
+
+		enemies.add(new Enemy(500, 570, Direction.LEFT));
+		enemies.add(new Enemy(880, 570, Direction.LEFT));
+		enemies.add(new Enemy(700, 440, Direction.LEFT));
+		for (Enemy enemy : enemies) {
+			add(enemy);
 		}
 
 		addKeyListener(new KeyAdapter() {

@@ -3,15 +3,21 @@ package bubble.game;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
+import lombok.Getter;
+
 public class Bubble extends JLabel {
 
 	private static final int SPEED = 6;
 	private static final int RANGE = 300;
+	private static final int LIFE = 150;
 
 	private int x;
 	private int y;
 	private Direction direction;
 	private int distance;
+	private int time;
+	@Getter
+	private boolean popped;
 
 	public Bubble(Player player) {
 		x = player.getX();
@@ -23,6 +29,10 @@ public class Bubble extends JLabel {
 	}
 
 	public void move() {
+		time++;
+		if (time > LIFE) {
+			popped = true;
+		}
 		if (distance < RANGE) {
 			if (direction == Direction.LEFT) {
 				x -= SPEED;

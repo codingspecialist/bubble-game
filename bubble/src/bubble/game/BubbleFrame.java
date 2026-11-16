@@ -77,7 +77,12 @@ public class BubbleFrame extends JFrame {
 		player.fall(floors);
 		for (Bubble bubble : bubbles) {
 			bubble.move();
+			if (bubble.isPopped()) {
+				remove(bubble);
+			}
 		}
+		bubbles.removeIf(bubble -> bubble.isPopped());
+		repaint();
 	}
 
 	private void shoot() {

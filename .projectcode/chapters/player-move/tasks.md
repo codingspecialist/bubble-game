@@ -5,7 +5,7 @@
   - 파일: bubble/src/bubble/game/Player.java, bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 오른쪽 화살표를 한 번 누르면 펭귄이 오른쪽으로 10 움직인다
   - Why: 키 이벤트로 플레이어를 움직이는 가장 짧은 길부터 본다
-- [ ] T2 게임 루프로 부드럽게 움직이기
+- [x] T2 게임 루프로 부드럽게 움직이기
   - 근거: S2
   - 파일: bubble/src/bubble/game/Player.java, bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 오른쪽 화살표를 누르고 있는 동안 펭귄이 끊기지 않고 오른쪽으로 간다

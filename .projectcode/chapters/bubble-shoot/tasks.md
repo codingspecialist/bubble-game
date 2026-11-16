@@ -5,7 +5,7 @@
   - 파일: bubble/src/bubble/game/Bubble.java, bubble/src/bubble/game/Player.java, bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 스페이스를 누르면 펭귄 자리에 물방울이 생겨 그대로 있다
   - Why: 물방울을 화면에 놓는 것부터 확인해야 움직임을 더할 수 있다
-- [ ] T2 물방울 목록을 루프에서 움직이기
+- [x] T2 물방울 목록을 루프에서 움직이기
   - 근거: S2, S3, S4, S5
   - 파일: bubble/src/bubble/game/Bubble.java, bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 쏜 물방울들이 바라보는 쪽으로 날아간 뒤 천장으로 떠오른다

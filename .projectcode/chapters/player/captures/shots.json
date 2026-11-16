@@ -1,0 +1,43 @@
+{
+  "chapter": "player",
+  "window": {
+    "cwd": "bubble",
+    "build": "javac -encoding UTF-8 -d bin -cp lib/lombok.jar -processorpath lib/lombok.jar src/bubble/game/*.java",
+    "main": "bubble.game.BubbleFrame",
+    "classpath": "bin;lib/lombok.jar"
+  },
+  "shots": [
+    {
+      "file": "T1-펭귄-플레이어.png",
+      "task": "T1",
+      "commit": "893ca2b",
+      "screen": "게임 창",
+      "see": "창 왼쪽 아래에 펭귄이 오른쪽을 보고 서 있다",
+      "window": {
+        "steps": []
+      }
+    },
+    {
+      "file": "T2-ex03-실행.png",
+      "task": "T2",
+      "commit": "6047ad2",
+      "screen": "게임 창",
+      "see": "bubble.ex03.BubbleFrame도 펭귄이 있는 창을 띄운다",
+      "window": {
+        "steps": [],
+        "main": "bubble.ex03.BubbleFrame",
+        "build": "javac -encoding UTF-8 -d bin -cp lib/lombok.jar -processorpath lib/lombok.jar src/bubble/ex03/*.java"
+      }
+    },
+    {
+      "file": "done-플레이어.png",
+      "task": "done",
+      "commit": "6047ad2",
+      "screen": "게임 창",
+      "see": "동굴 배경 왼쪽 아래에 펭귄이 서 있다",
+      "window": {
+        "steps": []
+      }
+    }
+  ]
+}

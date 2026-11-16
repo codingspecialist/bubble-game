@@ -10,7 +10,7 @@
   - 파일: bubble/lib/lombok.jar, bubble/.classpath
   - 실행하면: Lombok을 붙여 컴파일해도 버블 게임 준비가 찍힌다
   - Why: 뒤 장에서 getter와 setter를 손으로 쓰지 않으려면 미리 붙여 둔다
-- [ ] T3 그림과 소리 파일 넣기
+- [x] T3 그림과 소리 파일 넣기
   - 근거: S4
   - 파일: bubble/image, bubble/sound
   - 실행하면: image와 sound 폴더에 파일 13개가 보인다

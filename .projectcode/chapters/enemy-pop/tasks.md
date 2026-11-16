@@ -10,7 +10,7 @@
   - 파일: bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 마지막 적군이 사라지면 화면 가운데 맨 앞에 CLEAR!가 보인다
   - Why: 목록이 비었는지로 끝을 알고, 0번 자리에 넣어 벽돌보다 앞에 그린다
-- [ ] T3 장 끝 코드를 ex13으로 남기기
+- [x] T3 장 끝 코드를 ex13으로 남기기
   - 근거: S5
   - 파일: bubble/src/bubble/ex13
   - 실행하면: bubble.ex13.BubbleFrame도 적군을 다 터트리면 CLEAR!가 보인다

@@ -15,7 +15,7 @@
   - 파일: bubble/src/bubble/game/Sound.java, bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 게임오버가 되면 배경음악이 멈추고 게임오버 소리가 한 번 나온다. 화면은 T2와 같다
   - Why: 반복 재생과 한 번 재생은 같은 Clip의 다른 메서드다
-- [ ] T4 장 끝 코드를 ex15로 남기기
+- [x] T4 장 끝 코드를 ex15로 남기기
   - 근거: S5
   - 파일: bubble/src/bubble/ex15
   - 실행하면: bubble.ex15.BubbleFrame도 적군에 닿으면 GAME OVER가 보인다

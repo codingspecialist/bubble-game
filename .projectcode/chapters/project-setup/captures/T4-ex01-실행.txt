@@ -1,0 +1,2 @@
+$ javac -encoding UTF-8 -d bin -cp lib/lombok.jar -processorpath lib/lombok.jar --source-path src src/bubble/ex01/BubbleFrame.java && java -cp "bin;lib/lombok.jar" bubble.ex01.BubbleFrame
+버블 게임 준비

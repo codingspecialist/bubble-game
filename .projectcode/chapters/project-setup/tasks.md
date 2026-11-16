@@ -20,6 +20,6 @@
   - 파일: bubble/src/bubble/ex01/BubbleFrame.java
   - 실행하면: bubble.ex01.BubbleFrame도 버블 게임 준비를 찍는다
   - Why: 장마다 끝난 코드를 따로 실행해 볼 수 있게 남긴다
-- [ ] 수렴 점검
-- [ ] 캡처
-- [ ] 도식
+- [x] 수렴 점검
+- [x] 캡처
+- [x] 도식

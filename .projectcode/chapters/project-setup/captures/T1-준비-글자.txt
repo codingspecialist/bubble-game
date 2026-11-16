@@ -1,0 +1,2 @@
+$ javac -encoding UTF-8 -d bin --source-path src src/bubble/game/BubbleFrame.java && java -cp bin bubble.game.BubbleFrame
+버블 게임 준비

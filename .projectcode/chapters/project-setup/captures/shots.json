@@ -1,0 +1,16 @@
+{
+  "chapter": "project-setup",
+  "command": "javac -encoding UTF-8 -d bin --source-path src src/bubble/game/BubbleFrame.java && java -cp bin bubble.game.BubbleFrame",
+  "cwd": "bubble",
+  "shots": [
+    { "file": "T1-준비-글자.txt", "task": "T1", "commit": "1bd3083", "screen": "콘솔", "see": "버블 게임 준비가 찍힌다", "run": {} },
+    { "file": "T2-Lombok-컴파일.txt", "task": "T2", "commit": "0c77187", "screen": "콘솔", "see": "Lombok을 붙여 컴파일해도 버블 게임 준비가 찍힌다",
+      "run": { "command": "javac -encoding UTF-8 -d bin -cp lib/lombok.jar -processorpath lib/lombok.jar --source-path src src/bubble/game/BubbleFrame.java && java -cp \"bin;lib/lombok.jar\" bubble.game.BubbleFrame" } },
+    { "file": "T3-그림과-소리.txt", "task": "T3", "commit": "034ba8f", "screen": "image, sound 폴더", "see": "파일 13개 이름이 보인다",
+      "run": { "command": "dir /b image sound" } },
+    { "file": "T4-ex01-실행.txt", "task": "T4", "commit": "c2db631", "screen": "콘솔", "see": "bubble.ex01.BubbleFrame도 버블 게임 준비를 찍는다",
+      "run": { "command": "javac -encoding UTF-8 -d bin -cp lib/lombok.jar -processorpath lib/lombok.jar --source-path src src/bubble/ex01/BubbleFrame.java && java -cp \"bin;lib/lombok.jar\" bubble.ex01.BubbleFrame" } },
+    { "file": "done-준비-글자.txt", "task": "done", "commit": "c2db631", "screen": "콘솔", "see": "버블 게임 준비가 찍힌다",
+      "run": { "command": "javac -encoding UTF-8 -d bin -cp lib/lombok.jar -processorpath lib/lombok.jar --source-path src src/bubble/game/BubbleFrame.java && java -cp \"bin;lib/lombok.jar\" bubble.game.BubbleFrame" } }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "chapter": "enemy",
+  "window": {
+    "cwd": "bubble",
+    "build": "javac -encoding UTF-8 -d bin -cp lib/lombok.jar -processorpath lib/lombok.jar src/bubble/game/*.java",
+    "main": "bubble.game.BubbleFrame",
+    "classpath": "bin;lib/lombok.jar"
+  },
+  "shots": [
+    {
+      "file": "T1-적군-셋.png",
+      "task": "T1",
+      "commit": "fde32c2",
+      "screen": "게임 창",
+      "see": "바닥에 적군 둘, 오른쪽 아래 발판에 적군 하나가 왼쪽을 보고 서 있다",
+      "window": {
+        "steps": []
+      }
+    },
+    {
+      "file": "T2-적군-걷기.png",
+      "task": "T2",
+      "commit": "8e95ee5",
+      "screen": "게임 창",
+      "see": "적군 셋이 모두 바닥에 있고 왼쪽 벽에 닿은 적군은 오른쪽을 보고 있다",
+      "window": {
+        "steps": [
+          "wait:6000"
+        ]
+      }
+    },
+    {
+      "file": "T3-ex10-실행.png",
+      "task": "T3",
+      "commit": "574a1e9",
+      "screen": "게임 창",
+      "see": "bubble.ex10.BubbleFrame도 적군들이 왼쪽으로 걸어가 처음 자리와 다르다",
+      "window": {
+        "steps": [
+          "wait:2000"
+        ],
+        "main": "bubble.ex10.BubbleFrame",
+        "build": "javac -encoding UTF-8 -d bin -cp lib/lombok.jar -processorpath lib/lombok.jar src/bubble/ex10/*.java"
+      }
+    },
+    {
+      "file": "done-적군.png",
+      "task": "done",
+      "commit": "574a1e9",
+      "screen": "게임 창",
+      "see": "적군들이 바닥에서 걷고 있고 하나는 오른쪽으로 돌아섰다",
+      "window": {
+        "steps": [
+          "wait:6000"
+        ]
+      }
+    }
+  ]
+}

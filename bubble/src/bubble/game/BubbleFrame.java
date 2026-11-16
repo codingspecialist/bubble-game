@@ -89,6 +89,13 @@ public class BubbleFrame extends JFrame {
 		}
 		for (Bubble bubble : bubbles) {
 			bubble.move();
+			for (Enemy enemy : enemies) {
+				boolean hit = bubble.getBounds().intersects(enemy.getBounds());
+				if (hit && !bubble.isPopped() && !enemy.isBubbled()) {
+					enemy.trap();
+					bubble.pop();
+				}
+			}
 			if (bubble.isPopped()) {
 				remove(bubble);
 			}

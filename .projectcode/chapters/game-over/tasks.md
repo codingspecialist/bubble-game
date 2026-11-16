@@ -5,7 +5,7 @@
   - 파일: bubble/src/bubble/game/BubbleFrame.java, bubble/src/bubble/game/Player.java
   - 실행하면: 적군에 닿은 펭귄이 쓰러진 그림이 되고 적군과 물방울이 모두 멈춘다
   - Why: 모든 움직임이 루프 하나에서 나오므로 Timer 하나만 멈추면 게임 전체가 멈춘다
-- [ ] T2 GAME OVER 맨 앞에 보이기
+- [x] T2 GAME OVER 맨 앞에 보이기
   - 근거: S3
   - 파일: bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 멈춘 화면 가운데 맨 앞에 GAME OVER가 보인다

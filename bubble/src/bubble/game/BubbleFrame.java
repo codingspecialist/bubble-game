@@ -19,6 +19,7 @@ public class BubbleFrame extends JFrame {
 	private List<Bubble> bubbles = new ArrayList<>();
 	private List<Enemy> enemies = new ArrayList<>();
 	private JLabel clear;
+	private JLabel gameover;
 	private Timer timer;
 
 	public BubbleFrame() {
@@ -57,6 +58,11 @@ public class BubbleFrame extends JFrame {
 		clear.setBounds(250, 258, 500, 124);
 		clear.setVisible(false);
 		add(clear, 0);
+
+		gameover = new JLabel(new ImageIcon("image/gameover.png"));
+		gameover.setBounds(250, 279, 500, 82);
+		gameover.setVisible(false);
+		add(gameover, 0);
 
 		addKeyListener(new KeyAdapter() {
 			@Override
@@ -135,6 +141,7 @@ public class BubbleFrame extends JFrame {
 	private void gameOver() {
 		timer.stop();
 		player.die();
+		gameover.setVisible(true);
 	}
 
 	private void shoot() {

@@ -1,6 +1,6 @@
 # floor-gravity 작업
 
-- [ ] T1 발판 목록을 벽돌로 그리기
+- [x] T1 발판 목록을 벽돌로 그리기
   - 근거: S1
   - 파일: bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 바닥과 발판 다섯 개가 벽돌로 보인다

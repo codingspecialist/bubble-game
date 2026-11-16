@@ -15,7 +15,7 @@
   - 파일: bubble/src/bubble/game/Bubble.java
   - 실행하면: 물방울이 전처럼 날아가 떠오르고 사라진다
   - Why: 물방울도 위치와 방향과 벽을 가진 같은 종류의 물체다
-- [ ] T4 장 끝 코드를 ex11로 남기기
+- [x] T4 장 끝 코드를 ex11로 남기기
   - 근거: S4
   - 파일: bubble/src/bubble/ex11
   - 실행하면: bubble.ex11.BubbleFrame도 전과 같이 움직인다

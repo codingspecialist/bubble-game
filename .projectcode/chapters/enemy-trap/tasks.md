@@ -10,7 +10,7 @@
   - 파일: bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 갇힌 적군은 그 자리에 멈추고 다른 적군만 걷는다
   - Why: 상태에 따라 루프가 다르게 움직인다
-- [ ] T3 장 끝 코드를 ex12로 남기기
+- [x] T3 장 끝 코드를 ex12로 남기기
   - 근거: S5
   - 파일: bubble/src/bubble/ex12
   - 실행하면: bubble.ex12.BubbleFrame도 물방울로 적군을 가둔다

@@ -10,7 +10,7 @@
   - 파일: bubble/src/bubble/game/Enemy.java
   - 실행하면: 적군이 전처럼 걷고 떨어지고 벽에서 돌아선다
   - Why: Enemy의 fall은 Player와 한 글자도 다르지 않다. 부모에 하나만 둔다
-- [ ] T3 Bubble이 Sprite 물려받기
+- [x] T3 Bubble이 Sprite 물려받기
   - 근거: S1, S2
   - 파일: bubble/src/bubble/game/Bubble.java
   - 실행하면: 물방울이 전처럼 날아가 떠오르고 사라진다

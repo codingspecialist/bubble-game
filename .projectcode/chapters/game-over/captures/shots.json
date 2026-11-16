@@ -1,0 +1,93 @@
+{
+  "chapter": "game-over",
+  "window": {
+    "cwd": "bubble",
+    "build": "javac -encoding UTF-8 -d bin -cp lib/lombok.jar -processorpath lib/lombok.jar src/bubble/game/*.java",
+    "main": "bubble.game.BubbleFrame",
+    "classpath": "bin;lib/lombok.jar"
+  },
+  "shots": [
+    {
+      "file": "T1-적군에-닿아-멈춤.png",
+      "task": "T1",
+      "commit": "ef0bd1f",
+      "screen": "게임 창",
+      "see": "적군에 닿은 펭귄이 어지러운 눈의 쓰러진 그림이고 모두 멈췄다",
+      "window": {
+        "steps": [
+          "wait:300",
+          "press:RIGHT",
+          "wait:6500",
+          "release:RIGHT",
+          "wait:12000"
+        ]
+      }
+    },
+    {
+      "file": "T2-GAME-OVER.png",
+      "task": "T2",
+      "commit": "a161681",
+      "screen": "게임 창",
+      "see": "멈춘 화면 가운데 벽돌보다 앞에 GAME OVER가 보인다",
+      "window": {
+        "steps": [
+          "wait:300",
+          "press:RIGHT",
+          "wait:6500",
+          "release:RIGHT",
+          "wait:12000"
+        ]
+      }
+    },
+    {
+      "file": "T3-게임오버-소리.png",
+      "task": "T3",
+      "commit": "ce7585c",
+      "screen": "게임 창",
+      "see": "화면은 T2와 같다. 배경음악이 멈추고 게임오버 소리가 나는 것은 실행해서 듣는다",
+      "window": {
+        "steps": [
+          "wait:300",
+          "press:RIGHT",
+          "wait:6500",
+          "release:RIGHT",
+          "wait:12000"
+        ]
+      }
+    },
+    {
+      "file": "T4-ex15-실행.png",
+      "task": "T4",
+      "commit": "9bbb1eb",
+      "screen": "게임 창",
+      "see": "bubble.ex15.BubbleFrame도 적군에 닿으면 GAME OVER가 보인다",
+      "window": {
+        "steps": [
+          "wait:300",
+          "press:RIGHT",
+          "wait:6500",
+          "release:RIGHT",
+          "wait:12000"
+        ],
+        "main": "bubble.ex15.BubbleFrame",
+        "build": "javac -encoding UTF-8 -d bin -cp lib/lombok.jar -processorpath lib/lombok.jar src/bubble/ex15/*.java"
+      }
+    },
+    {
+      "file": "done-게임오버.png",
+      "task": "done",
+      "commit": "9bbb1eb",
+      "screen": "게임 창",
+      "see": "쓰러진 펭귄 옆에 적군이 멈춰 있고 가운데 맨 앞에 GAME OVER가 보인다",
+      "window": {
+        "steps": [
+          "wait:300",
+          "press:RIGHT",
+          "wait:6500",
+          "release:RIGHT",
+          "wait:12000"
+        ]
+      }
+    }
+  ]
+}

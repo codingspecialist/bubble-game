@@ -25,4 +25,16 @@ public class Sound {
 			clip.loop(Clip.LOOP_CONTINUOUSLY);
 		}
 	}
+
+	public void play() {
+		if (clip != null) {
+			clip.start();
+		}
+	}
+
+	public void stop() {
+		if (clip != null) {
+			clip.stop();
+		}
+	}
 }

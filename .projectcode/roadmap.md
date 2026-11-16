@@ -49,7 +49,7 @@
 | 9 | bubble-pop | 물방울 사라지기 | 기능 | remove와 repaint, removeIf | 완료 |
 | 10 | enemy | 적군 만들기 | 기능 | 혼자 걷는 물체, 벽에서 돌아서기 | 완료 |
 | 11 | sprite-refactor | 공통 부모 Sprite | 리팩터 | 상속으로 겹치는 코드 합치기, protected | 완료 |
-| 12 | enemy-trap | 적군 가두기 | 기능 | Rectangle intersects, 상태 바꾸기 | 진행 중 |
+| 12 | enemy-trap | 적군 가두기 | 기능 | Rectangle intersects, 상태 바꾸기 | 완료 |
 | 13 | enemy-pop | 갇힌 적군 터트리기 | 기능 | 리스트에서 적군 지우기, 클리어 | 대기 |
 | 14 | bgm | 배경음악 | 기능 | Clip으로 wav 반복 재생 | 대기 |
 | 15 | game-over | 게임오버 | 기능 | 게임 루프 멈추기, 화면 맨 앞에 놓기 | 대기 |

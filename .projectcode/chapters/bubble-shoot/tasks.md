@@ -1,6 +1,6 @@
 # bubble-shoot 작업
 
-- [ ] T1 스페이스로 물방울 만들기
+- [x] T1 스페이스로 물방울 만들기
   - 근거: S1
   - 파일: bubble/src/bubble/game/Bubble.java, bubble/src/bubble/game/Player.java, bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 스페이스를 누르면 펭귄 자리에 물방울이 생겨 그대로 있다

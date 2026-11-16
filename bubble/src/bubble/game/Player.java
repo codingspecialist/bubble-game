@@ -6,6 +6,7 @@ import java.util.List;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
+import lombok.Getter;
 import lombok.Setter;
 
 public class Player extends JLabel {
@@ -22,6 +23,7 @@ public class Player extends JLabel {
 	private boolean left;
 	@Setter
 	private boolean right;
+	@Getter
 	private Direction direction;
 	private ImageIcon playerR;
 	private ImageIcon playerL;

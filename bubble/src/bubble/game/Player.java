@@ -17,4 +17,14 @@ public class Player extends JLabel {
 		setSize(50, 50);
 		setLocation(x, y);
 	}
+
+	public void moveLeft() {
+		x -= 10;
+		setLocation(x, y);
+	}
+
+	public void moveRight() {
+		x += 10;
+		setLocation(x, y);
+	}
 }

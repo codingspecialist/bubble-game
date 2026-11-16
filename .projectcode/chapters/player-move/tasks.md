@@ -1,6 +1,6 @@
 # player-move 작업
 
-- [ ] T1 키를 누를 때마다 움직이기
+- [x] T1 키를 누를 때마다 움직이기
   - 근거: S1
   - 파일: bubble/src/bubble/game/Player.java, bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 오른쪽 화살표를 한 번 누르면 펭귄이 오른쪽으로 10 움직인다

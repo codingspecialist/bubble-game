@@ -1,6 +1,6 @@
 # player-jump 작업
 
-- [ ] T1 위 화살표로 점프하기
+- [x] T1 위 화살표로 점프하기
   - 근거: S1, S2, S3
   - 파일: bubble/src/bubble/game/Player.java, bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 가운데 발판에서 왼쪽으로 뛰면 위 발판을 뚫고 올라가 그 위에 선다

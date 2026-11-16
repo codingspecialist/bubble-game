@@ -48,6 +48,7 @@ public class BubbleFrame extends JFrame {
 				switch (e.getKeyCode()) {
 				case KeyEvent.VK_LEFT -> player.setLeft(true);
 				case KeyEvent.VK_RIGHT -> player.setRight(true);
+				case KeyEvent.VK_UP -> player.jump();
 				}
 			}
 

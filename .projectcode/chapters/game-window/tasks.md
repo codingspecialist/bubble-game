@@ -5,7 +5,7 @@
   - 파일: bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 제목이 버블 게임인 빈 창이 화면 가운데 뜬다
   - Why: 그림을 놓을 창이 먼저 있어야 한다
-- [ ] T2 배경 그림 깔기
+- [x] T2 배경 그림 깔기
   - 근거: S3
   - 파일: bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 창 전체에 동굴 배경이 보인다

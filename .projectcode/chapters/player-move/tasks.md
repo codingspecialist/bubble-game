@@ -15,7 +15,7 @@
   - 파일: bubble/src/bubble/game/Direction.java, bubble/src/bubble/game/Player.java
   - 실행하면: 왼쪽 화살표를 누르면 펭귄이 왼쪽을 보고 걸어간다
   - Why: 바라보는 쪽을 기억해야 뒤 장에서 물방울을 그쪽으로 쏜다
-- [ ] T4 장 끝 코드를 ex04로 남기기
+- [x] T4 장 끝 코드를 ex04로 남기기
   - 근거: S4
   - 파일: bubble/src/bubble/ex04
   - 실행하면: bubble.ex04.BubbleFrame도 화살표로 펭귄이 움직인다

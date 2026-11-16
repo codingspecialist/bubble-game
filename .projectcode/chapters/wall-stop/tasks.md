@@ -5,7 +5,7 @@
   - 파일: bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 창 왼쪽과 오른쪽 끝에 벽돌 벽이 보이고, 펭귄은 아직 벽을 지나간다
   - Why: 벽이 보여야 어디서 멈춰야 하는지 눈으로 확인한다
-- [ ] T2 벽에서 멈추기
+- [x] T2 벽에서 멈추기
   - 근거: S2
   - 파일: bubble/src/bubble/game/Player.java
   - 실행하면: 왼쪽 화살표를 계속 눌러도 펭귄이 왼쪽 벽 앞에서 멈춘다

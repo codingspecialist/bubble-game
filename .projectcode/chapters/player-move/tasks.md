@@ -10,7 +10,7 @@
   - 파일: bubble/src/bubble/game/Player.java, bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 오른쪽 화살표를 누르고 있는 동안 펭귄이 끊기지 않고 오른쪽으로 간다
   - Why: 키를 누를 때마다 움직이면 처음에 멈칫한다. 키는 상태만 바꾸고 움직임은 루프가 맡는다
-- [ ] T3 움직이는 쪽 바라보기
+- [x] T3 움직이는 쪽 바라보기
   - 근거: S3
   - 파일: bubble/src/bubble/game/Direction.java, bubble/src/bubble/game/Player.java
   - 실행하면: 왼쪽 화살표를 누르면 펭귄이 왼쪽을 보고 걸어간다

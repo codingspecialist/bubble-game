@@ -1,6 +1,6 @@
 # game-over 작업
 
-- [ ] T1 적군에 닿으면 루프 멈추기
+- [x] T1 적군에 닿으면 루프 멈추기
   - 근거: S1, S2
   - 파일: bubble/src/bubble/game/BubbleFrame.java, bubble/src/bubble/game/Player.java
   - 실행하면: 적군에 닿은 펭귄이 쓰러진 그림이 되고 적군과 물방울이 모두 멈춘다

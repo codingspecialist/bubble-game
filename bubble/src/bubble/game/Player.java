@@ -15,11 +15,13 @@ public class Player extends Sprite {
 	private boolean right;
 	private ImageIcon playerR;
 	private ImageIcon playerL;
+	private ImageIcon playerDie;
 
 	public Player() {
 		super(80, 40, Direction.RIGHT);
 		playerR = new ImageIcon("image/playerR.png");
 		playerL = new ImageIcon("image/playerL.png");
+		playerDie = new ImageIcon("image/playerDie.png");
 		setIcon(playerR);
 	}
 
@@ -45,5 +47,9 @@ public class Player extends Sprite {
 		if (onGround) {
 			dy = JUMP;
 		}
+	}
+
+	public void die() {
+		setIcon(playerDie);
 	}
 }

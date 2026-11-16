@@ -49,6 +49,7 @@ public class BubbleFrame extends JFrame {
 				case KeyEvent.VK_LEFT -> player.setLeft(true);
 				case KeyEvent.VK_RIGHT -> player.setRight(true);
 				case KeyEvent.VK_UP -> player.jump();
+				case KeyEvent.VK_SPACE -> shoot();
 				}
 			}
 
@@ -71,6 +72,11 @@ public class BubbleFrame extends JFrame {
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);
+	}
+
+	private void shoot() {
+		Bubble bubble = new Bubble(player);
+		add(bubble);
 	}
 
 	private void addBrick(int x, int y) {

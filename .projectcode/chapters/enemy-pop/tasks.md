@@ -5,7 +5,7 @@
   - 파일: bubble/src/bubble/game/Enemy.java, bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 적군을 모두 가둔 뒤 펭귄이 걸어가 닿으면 적군이 모두 사라진다
   - Why: 물방울을 지운 방법 그대로 화면과 목록에서 적군을 지운다
-- [ ] T2 적군을 다 터트리면 CLEAR! 보이기
+- [x] T2 적군을 다 터트리면 CLEAR! 보이기
   - 근거: S4
   - 파일: bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 마지막 적군이 사라지면 화면 가운데 맨 앞에 CLEAR!가 보인다

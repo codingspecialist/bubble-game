@@ -18,6 +18,7 @@ public class BubbleFrame extends JFrame {
 	private List<Rectangle> floors = new ArrayList<>();
 	private List<Bubble> bubbles = new ArrayList<>();
 	private List<Enemy> enemies = new ArrayList<>();
+	private JLabel clear;
 
 	public BubbleFrame() {
 		setTitle("버블 게임");
@@ -50,6 +51,11 @@ public class BubbleFrame extends JFrame {
 		for (Enemy enemy : enemies) {
 			add(enemy);
 		}
+
+		clear = new JLabel(new ImageIcon("image/clear.png"));
+		clear.setBounds(250, 258, 500, 124);
+		clear.setVisible(false);
+		add(clear, 0);
 
 		addKeyListener(new KeyAdapter() {
 			@Override
@@ -111,6 +117,9 @@ public class BubbleFrame extends JFrame {
 			}
 		}
 		enemies.removeIf(enemy -> enemy.isPopped());
+		if (enemies.isEmpty()) {
+			clear.setVisible(true);
+		}
 		repaint();
 	}
 

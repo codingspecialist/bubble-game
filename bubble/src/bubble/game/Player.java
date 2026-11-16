@@ -1,5 +1,8 @@
 package bubble.game;
 
+import java.awt.Rectangle;
+import java.util.List;
+
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
@@ -8,9 +11,11 @@ import lombok.Setter;
 public class Player extends JLabel {
 
 	private static final int SPEED = 4;
+	private static final int GRAVITY = 1;
 
 	private int x;
 	private int y;
+	private int dy;
 	@Setter
 	private boolean left;
 	@Setter
@@ -23,7 +28,7 @@ public class Player extends JLabel {
 		playerR = new ImageIcon("image/playerR.png");
 		playerL = new ImageIcon("image/playerL.png");
 		x = 80;
-		y = 570;
+		y = 40;
 		direction = Direction.RIGHT;
 		setIcon(playerR);
 		setSize(50, 50);
@@ -49,6 +54,21 @@ public class Player extends JLabel {
 			setIcon(playerL);
 		} else {
 			setIcon(playerR);
+		}
+		setLocation(x, y);
+	}
+
+	public void fall(List<Rectangle> floors) {
+		int bottom = y + 50;
+		dy += GRAVITY;
+		y += dy;
+		for (Rectangle floor : floors) {
+			boolean above = bottom <= floor.y && y + 50 >= floor.y;
+			boolean across = x + 50 > floor.x && x < floor.x + floor.width;
+			if (above && across) {
+				y = floor.y - 50;
+				dy = 0;
+			}
 		}
 		setLocation(x, y);
 	}

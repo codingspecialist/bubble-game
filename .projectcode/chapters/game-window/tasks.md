@@ -10,7 +10,7 @@
   - 파일: bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 창 전체에 동굴 배경이 보인다
   - Why: 배경 JLabel이 뒤 장에서 플레이어와 벽돌을 올려놓을 판이 된다
-- [ ] T3 장 끝 코드를 ex02로 남기기
+- [x] T3 장 끝 코드를 ex02로 남기기
   - 근거: S4
   - 파일: bubble/src/bubble/ex02/BubbleFrame.java
   - 실행하면: bubble.ex02.BubbleFrame도 같은 창을 띄운다

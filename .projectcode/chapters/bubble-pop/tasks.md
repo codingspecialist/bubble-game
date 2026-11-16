@@ -1,6 +1,6 @@
 # bubble-pop 작업
 
-- [ ] T1 시간이 지난 물방울 지우기
+- [x] T1 시간이 지난 물방울 지우기
   - 근거: S1, S2
   - 파일: bubble/src/bubble/game/Bubble.java, bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 먼저 쏜 물방울은 사라지고 나중에 쏜 물방울만 남는다

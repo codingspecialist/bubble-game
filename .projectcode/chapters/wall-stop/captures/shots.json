@@ -1,0 +1,69 @@
+{
+  "chapter": "wall-stop",
+  "window": {
+    "cwd": "bubble",
+    "build": "javac -encoding UTF-8 -d bin -cp lib/lombok.jar -processorpath lib/lombok.jar src/bubble/game/*.java",
+    "main": "bubble.game.BubbleFrame",
+    "classpath": "bin;lib/lombok.jar"
+  },
+  "shots": [
+    {
+      "file": "T1-벽돌-벽.png",
+      "task": "T1",
+      "commit": "95b3c19",
+      "screen": "게임 창",
+      "see": "양쪽 끝에 벽돌 벽이 있고 펭귄이 왼쪽 벽돌 위에 겹쳐 있다",
+      "window": {
+        "steps": [
+          "press:LEFT",
+          "wait:250",
+          "release:LEFT"
+        ]
+      }
+    },
+    {
+      "file": "T2-벽에서-멈춤.png",
+      "task": "T2",
+      "commit": "f85017b",
+      "screen": "게임 창",
+      "see": "왼쪽 화살표를 1초 눌러도 펭귄이 왼쪽 벽 바로 앞에 서 있다",
+      "window": {
+        "steps": [
+          "press:LEFT",
+          "wait:1000",
+          "release:LEFT"
+        ]
+      }
+    },
+    {
+      "file": "T3-ex05-실행.png",
+      "task": "T3",
+      "commit": "0ccc18c",
+      "screen": "게임 창",
+      "see": "bubble.ex05.BubbleFrame도 펭귄이 왼쪽 벽 앞에서 멈춘다",
+      "window": {
+        "steps": [
+          "press:LEFT",
+          "wait:1000",
+          "release:LEFT"
+        ],
+        "main": "bubble.ex05.BubbleFrame",
+        "build": "javac -encoding UTF-8 -d bin -cp lib/lombok.jar -processorpath lib/lombok.jar src/bubble/ex05/*.java"
+      }
+    },
+    {
+      "file": "done-벽에서-멈춤.png",
+      "task": "done",
+      "commit": "0ccc18c",
+      "screen": "게임 창",
+      "see": "펭귄이 왼쪽 벽 바로 앞에서 왼쪽을 보고 서 있다",
+      "window": {
+        "steps": [
+          "press:LEFT",
+          "wait:1000",
+          "release:LEFT"
+        ]
+      }
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # sprite-refactor 작업
 
-- [ ] T1 Sprite를 만들고 Player가 물려받기
+- [x] T1 Sprite를 만들고 Player가 물려받기
   - 근거: S1, S2, S3
   - 파일: bubble/src/bubble/game/Sprite.java, bubble/src/bubble/game/Player.java
   - 실행하면: 펭귄이 전처럼 걷고 뛰고 발판에 선다

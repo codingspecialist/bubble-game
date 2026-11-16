@@ -1,0 +1,25 @@
+# player-move 작업
+
+- [ ] T1 키를 누를 때마다 움직이기
+  - 근거: S1
+  - 파일: bubble/src/bubble/game/Player.java, bubble/src/bubble/game/BubbleFrame.java
+  - 실행하면: 오른쪽 화살표를 한 번 누르면 펭귄이 오른쪽으로 10 움직인다
+  - Why: 키 이벤트로 플레이어를 움직이는 가장 짧은 길부터 본다
+- [ ] T2 게임 루프로 부드럽게 움직이기
+  - 근거: S2
+  - 파일: bubble/src/bubble/game/Player.java, bubble/src/bubble/game/BubbleFrame.java
+  - 실행하면: 오른쪽 화살표를 누르고 있는 동안 펭귄이 끊기지 않고 오른쪽으로 간다
+  - Why: 키를 누를 때마다 움직이면 처음에 멈칫한다. 키는 상태만 바꾸고 움직임은 루프가 맡는다
+- [ ] T3 움직이는 쪽 바라보기
+  - 근거: S3
+  - 파일: bubble/src/bubble/game/Direction.java, bubble/src/bubble/game/Player.java
+  - 실행하면: 왼쪽 화살표를 누르면 펭귄이 왼쪽을 보고 걸어간다
+  - Why: 바라보는 쪽을 기억해야 뒤 장에서 물방울을 그쪽으로 쏜다
+- [ ] T4 장 끝 코드를 ex04로 남기기
+  - 근거: S4
+  - 파일: bubble/src/bubble/ex04
+  - 실행하면: bubble.ex04.BubbleFrame도 화살표로 펭귄이 움직인다
+  - Why: 장마다 끝난 코드를 따로 실행해 볼 수 있게 남긴다
+- [ ] 수렴 점검
+- [ ] 캡처
+- [ ] 도식

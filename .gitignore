@@ -1,3 +1,4 @@
 node_modules/
 bubble/bin/
 .claude/skills/projectcode-capture/bin-shot/
+.playwright-mcp/

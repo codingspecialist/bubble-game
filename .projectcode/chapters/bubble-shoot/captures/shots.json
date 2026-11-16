@@ -1,0 +1,84 @@
+{
+  "chapter": "bubble-shoot",
+  "window": {
+    "cwd": "bubble",
+    "build": "javac -encoding UTF-8 -d bin -cp lib/lombok.jar -processorpath lib/lombok.jar src/bubble/game/*.java",
+    "main": "bubble.game.BubbleFrame",
+    "classpath": "bin;lib/lombok.jar"
+  },
+  "shots": [
+    {
+      "file": "T1-물방울-생김.png",
+      "task": "T1",
+      "commit": "0838deb",
+      "screen": "게임 창",
+      "see": "스페이스를 누른 자리에 물방울이 그대로 있고 펭귄은 오른쪽으로 비켜 있다",
+      "window": {
+        "steps": [
+          "wait:800",
+          "tap:SPACE",
+          "wait:200",
+          "press:RIGHT",
+          "wait:500",
+          "release:RIGHT"
+        ]
+      }
+    },
+    {
+      "file": "T2-물방울-여러-개.png",
+      "task": "T2",
+      "commit": "306ffa0",
+      "screen": "게임 창",
+      "see": "쏜 물방울 세 개가 오른쪽으로 날아간 뒤 서로 다른 높이로 떠오르고 있다",
+      "window": {
+        "steps": [
+          "wait:800",
+          "tap:SPACE",
+          "wait:400",
+          "press:RIGHT",
+          "wait:300",
+          "release:RIGHT",
+          "tap:SPACE",
+          "wait:1500",
+          "tap:SPACE",
+          "wait:300"
+        ]
+      }
+    },
+    {
+      "file": "T3-ex08-실행.png",
+      "task": "T3",
+      "commit": "971a09e",
+      "screen": "게임 창",
+      "see": "bubble.ex08.BubbleFrame도 물방울이 오른쪽으로 날아간다",
+      "window": {
+        "steps": [
+          "wait:800",
+          "tap:SPACE",
+          "wait:500"
+        ],
+        "main": "bubble.ex08.BubbleFrame",
+        "build": "javac -encoding UTF-8 -d bin -cp lib/lombok.jar -processorpath lib/lombok.jar src/bubble/ex08/*.java"
+      }
+    },
+    {
+      "file": "done-물방울-쏘기.png",
+      "task": "done",
+      "commit": "971a09e",
+      "screen": "게임 창",
+      "see": "왼쪽으로 쏜 물방울은 벽을 넘지 않고 벽 앞에 있고, 오른쪽으로 쏜 물방울은 떠올라 있다",
+      "window": {
+        "steps": [
+          "wait:800",
+          "tap:SPACE",
+          "wait:300",
+          "press:LEFT",
+          "wait:100",
+          "release:LEFT",
+          "tap:SPACE",
+          "wait:900"
+        ]
+      }
+    }
+  ]
+}

@@ -19,6 +19,14 @@ import javax.swing.SwingUtilities;
 public class WindowShot {
 
 	public static void main(String[] args) throws Exception {
+		try {
+			shoot(args);
+		} finally {
+			System.exit(0);
+		}
+	}
+
+	static void shoot(String[] args) throws Exception {
 		String mainClass = args[0];
 		String out = args[1];
 		Class.forName(mainClass).getMethod("main", String[].class).invoke(null, (Object) new String[0]);
@@ -37,7 +45,6 @@ public class WindowShot {
 			g.dispose();
 		});
 		ImageIO.write(image[0], "png", new File(out));
-		System.exit(0);
 	}
 
 	static JFrame findFrame() throws InterruptedException {

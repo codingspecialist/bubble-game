@@ -7,7 +7,7 @@
 
 import { readFileSync, writeFileSync } from "node:fs"
 import { execSync } from "node:child_process"
-import { dirname, join } from "node:path"
+import { dirname, join, resolve } from "node:path"
 import { createRequire } from "node:module"
 import { fileURLToPath } from "node:url"
 
@@ -119,18 +119,19 @@ function takeRun(shot) {
 }
 
 // 게임 창을 띄우고 키를 보낸 뒤 창 내용을 PNG로 남긴다. WindowShot.java가 찍는다
-// spec.window: { cwd, build, main, classpath }. shot.window: { main, steps }
+// spec.window: { cwd, build, main, classpath }. shot.window: { main, build, steps }
 function takeWindow(shot) {
   const skillDir = dirname(fileURLToPath(import.meta.url))
   const shotBin = join(skillDir, "bin-shot")
   execSync(`javac -encoding UTF-8 -d "${shotBin}" "${join(skillDir, "WindowShot.java")}"`, { stdio: "pipe" })
   const cwd = spec.window.cwd || "."
-  if (spec.window.build) execSync(spec.window.build, { cwd, stdio: "pipe", timeout: 120000 })
+  const build = shot.window.build || spec.window.build
+  if (build) execSync(build, { cwd, stdio: "pipe", timeout: 120000 })
   const sep = process.platform === "win32" ? ";" : ":"
   const classpath = `${spec.window.classpath}${sep}${shotBin}`
   const main = shot.window.main || spec.window.main
   const steps = (shot.window.steps || []).map((s) => `"${s}"`).join(" ")
-  const out = join(process.cwd(), outDir, shot.file)
+  const out = resolve(outDir, shot.file)
   execSync(`java -cp "${classpath}" WindowShot ${main} "${out}" ${steps}`, { cwd, stdio: "pipe", timeout: 60000 })
 }
 

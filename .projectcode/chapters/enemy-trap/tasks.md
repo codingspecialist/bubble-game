@@ -1,6 +1,6 @@
 # enemy-trap 작업
 
-- [ ] T1 물방울에 닿은 적군 가두기
+- [x] T1 물방울에 닿은 적군 가두기
   - 근거: S1, S2, S4
   - 파일: bubble/src/bubble/game/Enemy.java, bubble/src/bubble/game/Bubble.java, bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 물방울에 맞은 적군이 갇힌 그림으로 바뀌고 물방울은 사라진다. 갇힌 채로 아직 걷는다

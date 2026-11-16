@@ -38,4 +38,8 @@ public class Bubble extends Sprite {
 		keepInWall();
 		setLocation(x, y);
 	}
+
+	public void pop() {
+		popped = true;
+	}
 }

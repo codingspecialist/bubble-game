@@ -1,0 +1,25 @@
+# sprite-refactor 작업
+
+- [ ] T1 Sprite를 만들고 Player가 물려받기
+  - 근거: S1, S2, S3
+  - 파일: bubble/src/bubble/game/Sprite.java, bubble/src/bubble/game/Player.java
+  - 실행하면: 펭귄이 전처럼 걷고 뛰고 발판에 선다
+  - Why: 가장 많은 코드를 가진 Player에서 공통 부분을 부모로 옮겨 Sprite의 모양을 잡는다
+- [ ] T2 Enemy가 Sprite 물려받기
+  - 근거: S1, S2, S3
+  - 파일: bubble/src/bubble/game/Enemy.java
+  - 실행하면: 적군이 전처럼 걷고 떨어지고 벽에서 돌아선다
+  - Why: Enemy의 fall은 Player와 한 글자도 다르지 않다. 부모에 하나만 둔다
+- [ ] T3 Bubble이 Sprite 물려받기
+  - 근거: S1, S2
+  - 파일: bubble/src/bubble/game/Bubble.java
+  - 실행하면: 물방울이 전처럼 날아가 떠오르고 사라진다
+  - Why: 물방울도 위치와 방향과 벽을 가진 같은 종류의 물체다
+- [ ] T4 장 끝 코드를 ex11로 남기기
+  - 근거: S4
+  - 파일: bubble/src/bubble/ex11
+  - 실행하면: bubble.ex11.BubbleFrame도 전과 같이 움직인다
+  - Why: 장마다 끝난 코드를 따로 실행해 볼 수 있게 남긴다
+- [ ] 수렴 점검
+- [ ] 캡처
+- [ ] 도식

@@ -84,8 +84,10 @@ public class BubbleFrame extends JFrame {
 		player.move();
 		player.fall(floors);
 		for (Enemy enemy : enemies) {
-			enemy.move();
-			enemy.fall(floors);
+			if (!enemy.isBubbled()) {
+				enemy.move();
+				enemy.fall(floors);
+			}
 		}
 		for (Bubble bubble : bubbles) {
 			bubble.move();

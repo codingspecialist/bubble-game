@@ -5,7 +5,7 @@
   - 파일: bubble/src/bubble/game/Enemy.java, bubble/src/bubble/game/Bubble.java, bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 물방울에 맞은 적군이 갇힌 그림으로 바뀌고 물방울은 사라진다. 갇힌 채로 아직 걷는다
   - Why: 두 그림의 Rectangle이 겹치는지로 맞았는지 알고, 상태 칸 하나로 적군을 바꾼다
-- [ ] T2 갇힌 적군 멈추기
+- [x] T2 갇힌 적군 멈추기
   - 근거: S3
   - 파일: bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 갇힌 적군은 그 자리에 멈추고 다른 적군만 걷는다

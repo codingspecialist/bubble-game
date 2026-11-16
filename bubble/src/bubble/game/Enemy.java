@@ -13,6 +13,8 @@ public class Enemy extends Sprite {
 	private ImageIcon enemyBubbled;
 	@Getter
 	private boolean bubbled;
+	@Getter
+	private boolean popped;
 
 	public Enemy(int x, int y, Direction direction) {
 		super(x, y, direction);
@@ -53,5 +55,9 @@ public class Enemy extends Sprite {
 	public void trap() {
 		bubbled = true;
 		setIcon(enemyBubbled);
+	}
+
+	public void pop() {
+		popped = true;
 	}
 }

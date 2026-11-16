@@ -1,6 +1,6 @@
 # enemy-pop 작업
 
-- [ ] T1 갇힌 적군에 닿으면 터트리기
+- [x] T1 갇힌 적군에 닿으면 터트리기
   - 근거: S1, S2, S3
   - 파일: bubble/src/bubble/game/Enemy.java, bubble/src/bubble/game/BubbleFrame.java
   - 실행하면: 적군을 모두 가둔 뒤 펭귄이 걸어가 닿으면 적군이 모두 사라진다

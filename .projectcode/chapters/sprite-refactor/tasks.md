@@ -5,7 +5,7 @@
   - 파일: bubble/src/bubble/game/Sprite.java, bubble/src/bubble/game/Player.java
   - 실행하면: 펭귄이 전처럼 걷고 뛰고 발판에 선다
   - Why: 가장 많은 코드를 가진 Player에서 공통 부분을 부모로 옮겨 Sprite의 모양을 잡는다
-- [ ] T2 Enemy가 Sprite 물려받기
+- [x] T2 Enemy가 Sprite 물려받기
   - 근거: S1, S2, S3
   - 파일: bubble/src/bubble/game/Enemy.java
   - 실행하면: 적군이 전처럼 걷고 떨어지고 벽에서 돌아선다

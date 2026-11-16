@@ -43,7 +43,7 @@
 | 3 | player | 플레이어 놓기 | 기능 | JLabel 상속, ImageIcon | 완료 |
 | 4 | player-move | 좌우 이동 | 기능 | KeyAdapter, Timer 게임 루프, Direction enum, Lombok | 완료 |
 | 5 | wall-stop | 벽에서 멈추기 | 기능 | 벽돌 그리기, 이동 뒤 좌표 확인 | 완료 |
-| 6 | floor-gravity | 발판과 중력 | 기능 | Rectangle 목록, 중력, 착지 | 진행 중 |
+| 6 | floor-gravity | 발판과 중력 | 기능 | Rectangle 목록, 중력, 착지 | 완료 |
 | 7 | player-jump | 점프 | 기능 | 위로 향하는 속도, 발판 아래에서 올라타기 | 대기 |
 | 8 | bubble-shoot | 물방울 쏘기 | 기능 | 리스트로 여러 물체 갱신 | 대기 |
 | 9 | bubble-pop | 물방울 사라지기 | 기능 | remove와 repaint, removeIf | 대기 |

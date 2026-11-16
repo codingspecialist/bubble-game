@@ -1,0 +1,63 @@
+{
+  "chapter": "floor-gravity",
+  "window": {
+    "cwd": "bubble",
+    "build": "javac -encoding UTF-8 -d bin -cp lib/lombok.jar -processorpath lib/lombok.jar src/bubble/game/*.java",
+    "main": "bubble.game.BubbleFrame",
+    "classpath": "bin;lib/lombok.jar"
+  },
+  "shots": [
+    {
+      "file": "T1-발판-벽돌.png",
+      "task": "T1",
+      "commit": "d9d8798",
+      "screen": "게임 창",
+      "see": "바닥과 발판 다섯 개가 벽돌로 보이고 펭귄은 바닥 왼쪽에 있다",
+      "window": {
+        "steps": []
+      }
+    },
+    {
+      "file": "T2-떨어져-서기.png",
+      "task": "T2",
+      "commit": "ccce0ac",
+      "screen": "게임 창",
+      "see": "왼쪽 위에서 떨어진 펭귄이 오른쪽으로 걸어 나가 가운데 발판에 서 있다",
+      "window": {
+        "steps": [
+          "wait:500",
+          "press:RIGHT",
+          "wait:1600",
+          "release:RIGHT",
+          "wait:800"
+        ]
+      }
+    },
+    {
+      "file": "T3-ex06-실행.png",
+      "task": "T3",
+      "commit": "bba5018",
+      "screen": "게임 창",
+      "see": "bubble.ex06.BubbleFrame도 펭귄이 떨어져 왼쪽 위 발판에 선다",
+      "window": {
+        "steps": [
+          "wait:800"
+        ],
+        "main": "bubble.ex06.BubbleFrame",
+        "build": "javac -encoding UTF-8 -d bin -cp lib/lombok.jar -processorpath lib/lombok.jar src/bubble/ex06/*.java"
+      }
+    },
+    {
+      "file": "done-발판과-중력.png",
+      "task": "done",
+      "commit": "bba5018",
+      "screen": "게임 창",
+      "see": "펭귄이 왼쪽 위 발판에 서 있다",
+      "window": {
+        "steps": [
+          "wait:800"
+        ]
+      }
+    }
+  ]
+}

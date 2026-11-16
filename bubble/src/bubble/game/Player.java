@@ -1,42 +1,26 @@
 package bubble.game;
 
-import java.awt.Rectangle;
-import java.util.List;
-
 import javax.swing.ImageIcon;
-import javax.swing.JLabel;
 
-import lombok.Getter;
 import lombok.Setter;
 
-public class Player extends JLabel {
+public class Player extends Sprite {
 
 	private static final int SPEED = 4;
-	private static final int GRAVITY = 1;
 	private static final int JUMP = -18;
 
-	private int x;
-	private int y;
-	private int dy;
-	private boolean onGround;
 	@Setter
 	private boolean left;
 	@Setter
 	private boolean right;
-	@Getter
-	private Direction direction;
 	private ImageIcon playerR;
 	private ImageIcon playerL;
 
 	public Player() {
+		super(80, 40, Direction.RIGHT);
 		playerR = new ImageIcon("image/playerR.png");
 		playerL = new ImageIcon("image/playerL.png");
-		x = 80;
-		y = 40;
-		direction = Direction.RIGHT;
 		setIcon(playerR);
-		setSize(50, 50);
-		setLocation(x, y);
 	}
 
 	public void move() {
@@ -48,12 +32,7 @@ public class Player extends JLabel {
 			x += SPEED;
 			direction = Direction.RIGHT;
 		}
-		if (x < 40) {
-			x = 40;
-		}
-		if (x > 910) {
-			x = 910;
-		}
+		keepInWall();
 		if (direction == Direction.LEFT) {
 			setIcon(playerL);
 		} else {
@@ -66,22 +45,5 @@ public class Player extends JLabel {
 		if (onGround) {
 			dy = JUMP;
 		}
-	}
-
-	public void fall(List<Rectangle> floors) {
-		int bottom = y + 50;
-		dy += GRAVITY;
-		y += dy;
-		onGround = false;
-		for (Rectangle floor : floors) {
-			boolean above = bottom <= floor.y && y + 50 >= floor.y;
-			boolean across = x + 50 > floor.x && x < floor.x + floor.width;
-			if (above && across) {
-				y = floor.y - 50;
-				dy = 0;
-				onGround = true;
-			}
-		}
-		setLocation(x, y);
 	}
 }
